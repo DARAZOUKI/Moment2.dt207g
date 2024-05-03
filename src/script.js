@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:2000/workexperiences';
+const apiUrl = 'http://localhost:8000/workexperiences';
 
 // Function to fetch and display all work experiences
 async function fetchWorkExperiences() {
