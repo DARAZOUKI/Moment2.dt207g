@@ -6,9 +6,9 @@ The assignment requirements are as follows:
     * The web application should be a frontend-only solution, not based on Express/EJS.
     * Implement functionality to display existing work experiences and add new ones via a form.
     * The website should have at least three pages:
-        ** index.html: Display all work experiences in a list.
-        ** add.html: Provide a form to add new work experiences.
-        ** about.html: Describe the website's purpose and include information about the database server used.
+        **index.html: Display all work experiences in a list.
+        **add.html: Provide a form to add new work experiences.
+        **about.html: Describe the website's purpose and include information about the database server used.
     * Use Fetch API to perform GET, POST, and DELETE requests to and from the web service.
     * Build the solution using HTML, CSS, and JavaScript, optionally using SASS/SCSS.
     * Publish the solution to a publicly accessible web host or provide a video demonstration.
