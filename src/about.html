@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
-  <link rel="stylesheet" href="src\styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <header>
   <button class="menu-btn open" id="open-menu"  aria-label="Open Menu">
@@ -28,11 +28,30 @@
 </nav>
 </header>
 <body>
-  <h1>About</h1>
-  <p>This web application consumes a REST API to manage work experiences.</p>
-  <p>Database server used: sqlite3</p>
+  <main class="container">
+  <h1>About my Application</h1>
+  <p>Welcome to my web application for managing work experiences! This application allows users to store, retrieve, update, and delete their work experiences conveniently.</p>
+  <h2>Purpose</h2>
+<p>The primary purpose of this application is to provide users with a platform to organize and track their work history. Whether you're a professional looking to keep a record of your career journey or a student preparing your CV, our application offers a user-friendly interface to manage your work experiences effectively.</p>
+<h2>Technologies Used</h2>
+<ul>My web application is built using the following technologies:</ul>
+<li>Node.js: Backend server environment for running JavaScript code.</li>
+<li>Express.js: Web application framework for Node.js, used for routing and handling HTTP requests.</li>
+<li>SQLite: Lightweight relational database management system used for data storage.</li>
+<li>HTML/CSS/JavaScript: Frontend technologies for building the user interface and interactivity.</li>
+<li>Fetch API: Client-side JavaScript interface for making HTTP requests to the backend server.</li>
 
-  <script src="/java.js"></script>
+<h2>How It Works</h2>
+<li>Adding Work Experiences: Users can add new work experiences by filling out a simple form in the "Add Work Experience" page. The submitted data is then stored in our database for future reference.</li>
+<li>Viewing Work Experiences: The "Home" page displays a list of all stored work experiences, allowing users to easily view their career history at a glance.</li>
+ <li>Updating and Deleting: Users have the option to update or delete existing work experiences. This functionality provides flexibility for users to manage their records as needed.</li>
+<h2>About the Database</h2>
+<p>Our application utilizes a SQLite database to store work experience data. SQLite is a reliable and efficient choice for small to medium-sized databases, offering robust relational database features without the need for a separate server process.</p>
+<h2>Conclusion</h2>
+<p>I hope you find my web application useful for organizing and maintaining your work experiences. If you have any feedback or suggestions for improvement, please don't hesitate to reach out to me.</p>
+</main>
+
+ <script src="/java.js"></script>
   <script src="/script.js"></script>
 </body>
 </html>

@@ -10,6 +10,8 @@ const PORT = process.env.PORT || 8000;
 
 // Use JSON middleware
 app.use(express.json());
+app.use(express.static('src'));
+
 
 // Enable CORS
 app.use(cors());
@@ -25,6 +27,9 @@ const db = new sqlite3.Database(dbPath, (err) => {
 });
 
 // Routes
+
+
+
 // GET all work experiences
 app.get('/workexperiences', (req, res) => {
   db.all('SELECT * FROM workexperience', (error, rows) => {
