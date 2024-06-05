@@ -8,7 +8,7 @@ const sqlite3 = require('sqlite3').verbose();
 
 // Create an Express application
 const app = express();
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 9000;
 
 // Use JSON middleware
 app.use(express.json());

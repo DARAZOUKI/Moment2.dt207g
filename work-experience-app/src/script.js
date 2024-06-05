@@ -1,6 +1,6 @@
 //script.js
 
-const apiUrl = 'http://localhost:8000/workexperiences';
+const apiUrl = 'http://localhost:9000/workexperiences';
 
 // Function to fetch and display all work experiences
 async function fetchWorkExperiences() {
@@ -63,6 +63,7 @@ async function deleteWorkExperience(id) {
   try {
     const response = await fetch(`${apiUrl}/${id}`, {
       method: 'DELETE'
+      
     });
 
     if (response.ok) {
