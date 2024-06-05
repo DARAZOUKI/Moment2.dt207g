@@ -1,3 +1,5 @@
+//script.js
+
 const apiUrl = 'http://localhost:8000/workexperiences';
 
 // Function to fetch and display all work experiences
@@ -26,6 +28,14 @@ async function addWorkExperience(event) {
   const form = event.target;
   const formData = new FormData(form);
 
+  const companyname = formData.get('companyname');
+  const jobtitle = formData.get('jobtitle');
+
+  if (!companyname || !jobtitle) {
+    alert('Companyname and Jobtitle are required fields.');
+    return;
+  }
+
   try {
     const response = await fetch(apiUrl, {
       method: 'POST',
@@ -38,6 +48,7 @@ async function addWorkExperience(event) {
     if (response.ok) {
       alert('Work experience added successfully');
       form.reset();
+      fetchWorkExperiences(); 
     } else {
       const error = await response.json();
       alert(`Error: ${error.error}`);
