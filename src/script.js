@@ -1,6 +1,6 @@
 //script.js
 
-const apiUrl = 'http://moment2-dt207g.onrender.com';
+const apiUrl = 'https://moment2-dt207g.onrender.com/workexperiences';
 
 // Function to fetch and display all work experiences
 async function fetchWorkExperiences() {
