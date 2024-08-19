@@ -17,12 +17,10 @@ app.use(cors());
 
 // PostgreSQL database connection
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: 'postgresql://workexperiences_db_owner:kQfKT9Hq4VRL@ep-long-base-a2rcjm9j.eu-central-1.aws.neon.tech/workexperiences_db?sslmode=require',
   ssl: {
     rejectUnauthorized: false
-  },
-max: 10, // Maximum number of connections
-idleTimeoutMillis: 30000 // Close idle clients after 30 seconds
+  }
 });
 
 
