@@ -24,8 +24,11 @@ const pool = new Pool({
   port: 5432,
   ssl: {
     rejectUnauthorized: false
-  }
+  },
+max: 10, // Maximum number of connections
+idleTimeoutMillis: 30000 // Close idle clients after 30 seconds
 });
+
 
 // Routes
 
