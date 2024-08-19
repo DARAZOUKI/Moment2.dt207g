@@ -112,12 +112,18 @@ async function fetchWorkExperiences() {
     console.error('Error fetching work experiences:', error);
   }
 }
-// Attach event listeners
 document.addEventListener('DOMContentLoaded', () => {
-  fetchWorkExperiences(); // Fetch work experiences when the page loads
+  console.log('DOM fully loaded and parsed');
+  const workExperienceList = document.getElementById('work-experience-list');
+  if (workExperienceList) {
+    fetchWorkExperiences(); // Fetch work experiences when the page loads
+  } else {
+    console.error('Element with ID "work-experience-list" not found');
+  }
 });
 
 const addWorkForm = document.getElementById('add-work-form');
 if (addWorkForm) {
   addWorkForm.addEventListener('submit', addWorkExperience);
 }
+
