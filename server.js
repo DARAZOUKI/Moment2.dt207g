@@ -17,11 +17,7 @@ app.use(cors());
 
 // PostgreSQL database connection
 const pool = new Pool({
-  user: 'workexperiences_user',
-  host: 'dpg-cpfs7jv79t8c73e97r8g-a.oregon-postgres.render.com',
-  database: 'workexperiences',
-  password: 'Vln1U8MNia0ojpL4zR1xhvu0L3TzS9ba',
-  port: 5432,
+  connectionString: process.env.DATABASE_URL,
   ssl: {
     rejectUnauthorized: false
   },
